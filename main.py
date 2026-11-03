@@ -1,7 +1,11 @@
-n = int(input("Zadaj číslo: "))
-s = 0
-while n > 0:
-    c = n % 10
-    s += c
-    n//=10
-print(f"Sucet cifier je {s}")
+import random
+cislo = random.randint(0, 50)
+
+while cislo != 0:
+    print(cislo)
+    if cislo % 2 == 0:
+        print("Cislo je parne")
+    else:
+        print("Cislo je neparne")
+    cislo = random.randint(0, 50)
+print(f"Ciselko je {cislo} koniec")
